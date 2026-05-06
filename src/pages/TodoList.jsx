@@ -18,9 +18,9 @@ const TodoList = () => {
       <div className="row">
         <div className="col-md-7">
           <div className="list-group shadow-sm border-0">
-            {myTasks.map((t) => (
-              <TodoItem task={t} />
-            ))}
+           {myTasks.map((t) => (
+            <TodoItem key={t.id} task={t} />
+))}
           </div>
         </div>
         <div className="col-md-5"></div>
